@@ -24,6 +24,38 @@ header {
   border-radius: 5px;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.admin-controls {
+  position: relative;
+}
+
+.admin-panel {
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: white;
+  color: #333;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  z-index: 10;
+  text-align: left;
+}
+
+.admin-status {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1a237e;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -160,6 +192,11 @@ button {
   transition: background-color 0.2s;
 }
 
+button:disabled {
+  background-color: #9fa8da;
+  cursor: not-allowed;
+}
+
 button:hover {
   background-color: #3949ab;
 }
@@ -190,6 +227,10 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.signup-disabled {
+  opacity: 0.6;
 }
 
 footer {
